@@ -14,7 +14,7 @@ Promise.myPolyRace = (promises) => {
           return; 
         }
         promises.forEach((promise, index) => {
-			Promise.resolve(promise) 
+			  Promise.resolve(promise) 
                    .then(data => resolve(data),(e) => reject(e))
 		});
     })
